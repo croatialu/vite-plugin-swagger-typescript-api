@@ -20,13 +20,14 @@
    git clone https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api.git
    ```
 
-2.  安装依赖
+2. 安装依赖
 
-   ```sh
-   npm i
-   # 或 yarn
-   # 或 pnpm i
-   ```
+```sh
+npm i
+# 或 yarn
+# 或 pnpm i
+```
+
 3.  运行开发环境
 
 ```sh
@@ -39,10 +40,10 @@ npm run dev
 
 请尝试创建以下错误报告：
 
-- *可重现*。包括重现问题的步骤。
-- *具体的*。包括尽可能多的细节：哪个版本，什么环境等。
-- *独特的*。不要复制现有的已打开问题。
-- *范围仅限于单个错误*。每个报告一个错误。
+- _可重现_。包括重现问题的步骤。
+- _具体的_。包括尽可能多的细节：哪个版本，什么环境等。
+- _独特的_。不要复制现有的已打开问题。
+- _范围仅限于单个错误_。每个报告一个错误。
 
 **更好的是：提交带有修复或新功能的 Pull Requests！**
 
@@ -57,31 +58,31 @@ npm run dev
 4. 提交您的更改
 
    本项目使用 [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/)，因此请遵循提交消息中的规范。
-   
+
    git commit 将用于自动化生成日志，所以请勿直接提交 git commit。
-   
+
    非常建议使用 [commitizen](https://github.com/commitizen/cz-cli) 工具来生成 git commit，使用 husky 约束 git commit
 
-    ```sh
-    git add .
-    git cz # 使用 commitizen 提交！
-    git pull # 请合并最新代码并解决冲突后提交！
-    #请勿直接提交git commit
-    #若觉得修改太多也可分开提交。先 git add 一部分，执行 git cz 提交后再提交另外一部分
-    ```
+   ```sh
+   git add .
+   git cz # 使用 commitizen 提交！
+   git pull # 请合并最新代码并解决冲突后提交！
+   #请勿直接提交git commit
+   #若觉得修改太多也可分开提交。先 git add 一部分，执行 git cz 提交后再提交另外一部分
+   ```
 
-    关于选项，参考 [semantic-release](https://github.com/semantic-release/semantic-release) 的文档
+   关于选项，参考 [semantic-release](https://github.com/semantic-release/semantic-release) 的文档
 
-    -   若为 BUG 修复，则选择 `fix`
-    -   若为新增功能，则选择 `feat`
-    -   若为性能优化，则选择 `perf`
-    -   若为移除某些功能，则选择 `BREAKING CHANGE`
-        -    `BREAKING CHANGE` 和其他破坏性更新，若不是为了修复 BUG，原则上将拒绝该 PR
-
+   - 若为 BUG 修复，则选择 `fix`
+   - 若为新增功能，则选择 `feat`
+   - 若为性能优化，则选择 `perf`
+   - 若为移除某些功能，则选择 `BREAKING CHANGE`
+     - `BREAKING CHANGE` 和其他破坏性更新，若不是为了修复 BUG，原则上将拒绝该 PR
 
 5. 推送到分支 ( `git push origin feat/your_feature`)
 
 6. [打开一个新的 Pull Request](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api/compare?expand=1)
 
-***
+---
+
 _This CONTRIBUTING was generated with ❤️ by [cmyr-template-cli](https://github.com/CaoMeiYouRen/cmyr-template-cli)_

@@ -14,12 +14,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: "latest"
+          version: latest
       - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: "lts/*"
-          cache: "pnpm"
+          node-version: 'lts/*'
+          cache: pnpm
       - name: Cache Dependency
         uses: actions/cache@v3
         with:

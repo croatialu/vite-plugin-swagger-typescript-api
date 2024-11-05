@@ -21,25 +21,21 @@
   </a>
 </p>
 
-
 > 基于 swagger-typescript-api 的 vite 插件，自动化生成 API 接口
 
 ### 🏠 [主页](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme)
 
 [https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme)
 
-
 ### ✨ [Demo](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme)
 
 [https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api#readme)
 
-
 ## 依赖要求
-
 
 - node >=12
 - swagger-typescript-api >= 9
-- vite >=2 
+- vite >=2
 
 ## 安装
 
@@ -57,18 +53,17 @@ npm i -D vite-plugin-swagger-typescript-api
 import { defineConfig } from 'vite'
 import { vitePluginSwaggerTypescriptApi } from 'vite-plugin-swagger-typescript-api'
 
-
 // vite 相关配置请参考 https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        vitePluginSwaggerTypescriptApi({ // swagger-typescript-api 的配置，具体可参考 https://github.com/acacode/swagger-typescript-api
-            name: 'myApi.ts', //要生成的文件名称
-            output: path.resolve('./src/apis'), // 生成的文件所在的文件夹，注意要使用 path.resolve 解析出绝对路径，否则路径可能会有错误
-            input: path.resolve('./swagger.json'), // 从本地文件载入，路径问题同 output
-            url: "http://api.com/swagger.json", // 如果从远程接口载入
-            httpClientType: 'axios', // or "fetch" 生成的接口类型
-        })
-    ]
+  plugins: [
+    vitePluginSwaggerTypescriptApi({ // swagger-typescript-api 的配置，具体可参考 https://github.com/acacode/swagger-typescript-api
+      name: 'myApi.ts', // 要生成的文件名称
+      output: path.resolve('./src/apis'), // 生成的文件所在的文件夹，注意要使用 path.resolve 解析出绝对路径，否则路径可能会有错误
+      input: path.resolve('./swagger.json'), // 从本地文件载入，路径问题同 output
+      url: 'http://api.com/swagger.json', // 如果从远程接口载入
+      httpClientType: 'axios', // or "fetch" 生成的接口类型
+    })
+  ]
 })
 ```
 
@@ -98,15 +93,12 @@ npm run lint
 npm run commit
 ```
 
-
 ## 作者
-
 
 👤 **CaoMeiYouRen**
 
-* Website: [https://blog.cmyr.ltd/](https://blog.cmyr.ltd/)
-* GitHub: [@CaoMeiYouRen](https://github.com/CaoMeiYouRen)
-
+- Website: [https://blog.cmyr.ltd/](https://blog.cmyr.ltd/)
+- GitHub: [@CaoMeiYouRen](https://github.com/CaoMeiYouRen)
 
 ## 🤝贡献
 
@@ -121,5 +113,6 @@ npm run commit
 Copyright © 2022 [CaoMeiYouRen](https://github.com/CaoMeiYouRen).<br />
 This project is [MIT](https://github.com/CaoMeiYouRen/vite-plugin-swagger-typescript-api/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [cmyr-template-cli](https://github.com/CaoMeiYouRen/cmyr-template-cli)_

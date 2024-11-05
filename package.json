@@ -70,7 +70,8 @@
   },
   "peerDependencies": {
     "swagger-typescript-api": ">=9",
-    "vite": ">=2"
+    "vite": ">=2",
+    "@croatialu/query-templates": ">=0"
   },
   "config": {
     "commitizen": {
